@@ -11,12 +11,61 @@ body * {
   list-style: none;
 }
 
-section {
+h2 {
+  color: darkslategray;
+}
+
+ul {
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 200px;
+}
+
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
 #movieDetails {
-  display: block;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: lightgray;
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+}
+
+#movieDetails h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#movieDetails p {
+  font-size: 1rem;
+  color: #555;
 }
